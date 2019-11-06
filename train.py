@@ -80,6 +80,8 @@ time_steps, h, w = frames_per_video, default_nn_input_height, default_nn_input_w
 
 initial_epoch = 0
 ckpts = glob.glob("checkpoints/*.hdf5")
+print(">>>>>>>>>>>>>>>>>>>>>>>>")
+print(ckpts)
 if len(ckpts) != 0:
     # there are ckpts
     latest_ckpt = max(ckpts, key=os.path.getctime)
